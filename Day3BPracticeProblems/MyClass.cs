@@ -59,4 +59,27 @@ namespace Day3BPracticeProblems
             Console.WriteLine("Hi Every One");
         }
     }
+    public class AccessModiferDemo
+    {
+        public void PublicMethod()
+        {
+            int a=3, b=4;
+            Console.WriteLine(a+b);
+        }
+        private void PrivateMethod()
+        {
+            int a=9, b=4;
+            Console.WriteLine(a-b);
+        }
+        protected void ProtectedMethod()
+        {
+            int a = 9, b = 4;
+            Console.WriteLine(a * b);
+        }
+        internal void InternalMethod()
+        {
+            int a = 9, b = 4;
+            Console.WriteLine(a / b);
+        }
+    }
 }
