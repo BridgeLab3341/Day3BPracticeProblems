@@ -45,4 +45,18 @@ namespace Day3BPracticeProblems
             return count;
         }
     }
+    public interface Inter1
+    {
+        public void Display()
+        {
+            
+        }
+    }
+    public class TestClass : Inter1
+    {
+        public void Display()
+        {
+            Console.WriteLine("Hi Every One");
+        }
+    }
 }
