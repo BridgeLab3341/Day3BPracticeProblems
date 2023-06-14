@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Day3BPracticeProblems
+{
+    public class MyClass
+    {
+        private static int count=0;
+
+        // Default Constructor
+        public MyClass()
+        {
+            count++;
+            Console.WriteLine("Default Constructor called");
+        }
+        // Parameterized Constructor
+        public MyClass(int value)
+        {
+            count++;
+            Console.WriteLine("Parameterized Constructor called with value: " + value);
+        }
+        // Copy Constructor
+        public MyClass(MyClass obj)
+        {
+            count++;
+            Console.WriteLine("Copy Constructor called");
+        }
+
+        // Private Constructor
+        public MyClass(string message)
+        {
+            Console.WriteLine("Private Constructor called with message: " + message);
+        }
+        static MyClass()
+        {
+            count = 0;
+            Console.WriteLine("Static Constructor called");
+        }
+
+        public static int GetCount()
+        {
+            return count;
+        }
+    }
+}
